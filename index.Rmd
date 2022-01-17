@@ -51,3 +51,24 @@ xaringanExtra::use_logo(
 ---
 ### Hotspots de la transmisión del Dengue
 
+
+---
+# Thanks!
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019"> 
+
+&nbsp;
+
+- ***email***      :     felipe.dzul.m@gmail.com
+
+- ***celular***    :     228 229 3419
+
+- ***github***     :     [https://github.com/fdzul]()
+
+- ***slides***     :     [https://tender-allen-e59734.netlify.app]()
+
+
+
+.footnote[La presentación fue creada via [**xaringan**](https://github.com/yihui/xaringan),
+[**revealjs**](https://revealjs.com/),
+[remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr),
+& [R Markdown](https://rmarkdown.rstudio.com) en [R]() & [RStudio](2.R_Scripts/libs/rstudio_leaflet/rstudio_leaflet.css).]
