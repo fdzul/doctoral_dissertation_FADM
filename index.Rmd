@@ -112,6 +112,17 @@ class: center,
 <img src = "maps/intensity_maps_xalapa.jpg" width="450">
 ]
 
+---
+# Hipótesis
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019"> 
+
+### Las arbovirosis transmitidas por Aedes aegypti presentan concordancia espacial en las áreas de mayor intensidad de transmisión (hotspots), existe mayor abundancia del vector en las casas alrededor de los casos positivos que en las casas de los casos negativos y el tamaño de muestra de ovitrampas por manzana no tiene impacto en la abundancia del vector del dengue por manzana
+
+---
+class: center, middle
+## Objetivo General
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019"> 
+### Realizar el análisis espacio-temporal para identificar los puntos calientes (hotspots) de la transmisión de los virus del DENV, CHIKV y ZIKV en México.
 
 ---
 # Thanks!
