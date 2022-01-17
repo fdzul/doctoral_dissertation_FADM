@@ -2,7 +2,7 @@
 title: "Hotspots de la Transmisión de los virus del Dengue, Chikungunya y Zika en México"
 author: "Felipe Antonio Dzul Manzanilla"
 institute: "Director:  Dra. Adriana Flores Suárez<br /> <br /> <br /> Director Externo:  Dr. Gonzalo Vazquez-Prokopec"
-date: "`r Sys.Date()`"
+date: "2022-01-24"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -43,7 +43,10 @@ xaringanExtra::use_logo(
 )
 ```
 
-## Planteamiento del Problema
+## Contenido Temático
+
+### - Introducción 
+
 
 ---
 ### Hotspots de la transmisión del Dengue
