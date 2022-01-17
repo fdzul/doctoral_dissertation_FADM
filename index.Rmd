@@ -19,7 +19,6 @@ output:
       countIncrementalSlides: false
 ---
 
-class: center, middle
 ```{r xaringan-fit-screen, echo=FALSE}
 xaringanExtra::use_fit_screen()
 ```
@@ -45,14 +44,30 @@ xaringanExtra::use_logo(
 
 ## Contenido Temático
 
-### - Introducción 
-
-
----
-### Hotspots de la transmisión del Dengue
-
+- Introducción 
 
 ---
+class: center, middle
+## Introducción
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019"> 
+
+<img src = "figs/VectorBorneDiseases.jpg" width="1000">
+
+.tiny[.blue[.footnote[https://ais.paho.org/phip/viz/cha_cd_vectorborndiseases.asp]]]
+
+---
+class: center, middle
+## Introducción
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019"> 
+<figure>
+  <img src="https://journals.plos.org/plosntds/article/figure/image?size=large&id=10.1371/journal.pntd.0006845.g001">
+    </figcaption>
+</figure>
+
+.tiny[.blue[.footnote[Roiz et al. 2018; WHO, 2017]]]
+
+---
+class: center, middle
 # Thanks!
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019"> 
 
