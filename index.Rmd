@@ -18,7 +18,7 @@ output:
       highlightLines: true
       countIncrementalSlides: false
 ---
-
+class: center
 ```{r xaringan-fit-screen, echo=FALSE}
 xaringanExtra::use_fit_screen()
 ```
@@ -42,13 +42,8 @@ xaringanExtra::use_logo(
 )
 ```
 
-## Contenido Temático
-
-- Introducción 
-
----
-class: center
 ## Introducción
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 
 <img src = "figs/VectorBorneDiseases.jpg" width="1000", height = "500">
