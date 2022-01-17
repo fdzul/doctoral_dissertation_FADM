@@ -42,7 +42,7 @@ xaringanExtra::use_logo(
 )
 ```
 
-## Introducción
+# **Introducción**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 
@@ -52,7 +52,7 @@ xaringanExtra::use_logo(
 
 ---
 class: center
-## Introducción
+# **Introducción**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019"> 
 <figure>
   <img src="https://journals.plos.org/plosntds/article/figure/image?size=large&id=10.1371/journal.pntd.0006845.g001">
@@ -63,7 +63,7 @@ class: center
 
 ---
 class: center
-### Hotspots de la Transmisión del Dengue
+# **Hotspots de la Transmisión del Dengue**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 <img src="paho_2019/Diapositiva1.JPG" width="1000">
 
@@ -71,7 +71,7 @@ class: center
 
 ---
 class: center
-### Hotspots de la Transmisión del Dengue
+# **Hotspots de la Transmisión del Dengue**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 &nbsp;
@@ -92,7 +92,7 @@ Dzul-Manzanilla et al 2021.]]]
 
 ---
 class: center,
-## Justificación
+# **Justificación**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 &nbsp;
@@ -108,26 +108,33 @@ class: center,
 ]
 
 ---
-# Hipótesis
+# **Hipótesis**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019"> 
 
-### Las arbovirosis transmitidas por Aedes aegypti presentan concordancia espacial en las áreas de mayor intensidad de transmisión (hotspots), existe mayor abundancia del vector en las casas alrededor de los casos positivos que en las casas de los casos negativos y el tamaño de muestra de ovitrampas por manzana no tiene impacto en la abundancia del vector del dengue por manzana
+[Las arbovirosis transmitidas por ***Aedes aegypti*** presentan concordancia espacial en las áreas de mayor intensidad de transmisión (hotspots), existe mayor abundancia del vector en las casas alrededor de los casos positivos que en las casas de los casos negativos y el tamaño de muestra de ovitrampas por manzana no tiene impacto en la abundancia del vector del dengue por manzana]()
+
+&nbsp;
+
+&nbsp;
+# **Objetivo General**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019"> 
+
+[Realizar el análisis espacio-temporal para identificar los puntos calientes (hotspots) de la transmisión de los virus del DENV, CHIKV y ZIKV en México.]()
+
+
 
 ---
-class: center, middle
-## Objetivo General
-<hr style="height:2px;border-width:0;color:#330019;background-color:#330019"> 
-### Realizar el análisis espacio-temporal para identificar los puntos calientes (hotspots) de la transmisión de los virus del DENV, CHIKV y ZIKV en México.
-
----
-## Objetivos Específicos 
+# **Objetivos Específicos**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019"> 
 
-### - Determinar los hotspots de DENV, CHIKV y ZIKV en localidades endémicas de México y la concordancia espacial de los hotspots de transmisión de DENV, CHIKV y ZIKV.
+&nbsp;
+- [Determinar los hotspots de DENV, CHIKV y ZIKV en localidades endémicas de México y la concordancia espacial de los hotspots de transmisión de DENV, CHIKV y ZIKV.]()
 
-### - Determinar el efecto del tamaño de muestra del número de ovitrampas por manzana en la abundancia de huevos de ***Aedes aegypti***
+&nbsp;
+- [Determinar el efecto del tamaño de muestra del número de ovitrampas por manzana en la abundancia de huevos de ***Aedes aegypti***]()
 
-### - Determinar si la abundancia del vector y de huevos son diferentes en las casas alrededor de los casos positivos a dengue (casos) y las casas alrededor de los casos negativos (controles).
+&nbsp;
+- [Determinar si la abundancia del vector y de huevos son diferentes en las casas alrededor de los casos positivos a dengue (casos) y las casas alrededor de los casos negativos (controles).]()
 
 ---
 # Thanks!
@@ -137,9 +144,9 @@ class: center, middle
 
 
 
-- ***email***      :     felipe.dzul.m@gmail.com
+- ***email***      :     [felipe.dzul.m@gmail.com]()
 
-- ***celular***    :     228 229 3419
+- ***celular***    :     [228 229 3419]()
 
 - ***github***     :     [https://github.com/fdzul]()
 
