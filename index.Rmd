@@ -47,16 +47,16 @@ xaringanExtra::use_logo(
 - Introducción 
 
 ---
-class: center, middle
+class: center
 ## Introducción
-<hr style="height:2px;border-width:0;color:#330019;background-color:#330019"> 
 
-<img src = "figs/VectorBorneDiseases.jpg" width="1000">
+
+<img src = "figs/VectorBorneDiseases.jpg" width="1000", height = "500">
 
 .tiny[.blue[.footnote[https://ais.paho.org/phip/viz/cha_cd_vectorborndiseases.asp]]]
 
 ---
-class: center, middle
+class: center
 ## Introducción
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019"> 
 <figure>
