@@ -125,6 +125,16 @@ class: center, middle
 ### Realizar el análisis espacio-temporal para identificar los puntos calientes (hotspots) de la transmisión de los virus del DENV, CHIKV y ZIKV en México.
 
 ---
+## Objetivos Específicos 
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019"> 
+
+### - Determinar los hotspots de DENV, CHIKV y ZIKV en localidades endémicas de México y la concordancia espacial de los hotspots de transmisión de DENV, CHIKV y ZIKV.
+
+### - Determinar el efecto del tamaño de muestra del número de ovitrampas por manzana en la abundancia de huevos de ***Aedes aegypti***
+
+### - Determinar si la abundancia del vector y de huevos son diferentes en las casas alrededor de los casos positivos a dengue (casos) y las casas alrededor de los casos negativos (controles).
+
+---
 # Thanks!
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019"> 
 
