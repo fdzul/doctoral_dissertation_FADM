@@ -84,4 +84,5 @@ library(ggspatial)
     ggspatial::annotation_scale() 
 
 ggplot2::ggsave(filename = "figs/high_risk_loc.jpg",
-                dpi = 300)
+                dpi = 300,
+                bg = "white")
