@@ -493,6 +493,13 @@ class: center, middle
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 &nbsp;
+- [Determinar los hotspots de DENV, CHIKV y ZIKV en localidades endémicas de México y la concordancia espacial de los hotspots de transmisión de DENV, CHIKV y ZIKV.]()
+
+class: center, middle
+# **Discusión**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+&nbsp;
 - [Determinar el efecto del tamaño de muestra del número de ovitrampas por manzana en la abundancia de huevos de ***Aedes aegypti***]()
 
 ---
