@@ -500,8 +500,55 @@ class: center
 ### **Identificación de los hotspots**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
+.pull-left[
+.blue[]
+```{r, dpi=300,echo=FALSE, fig.align ="center", out.width = "100%"}
+DiagrammeR::grViz("digraph {
 
+  # graph definitions
+  graph [layout = dot, rankdir = TB]
+  
+  # node definitions
+  node [shape = rectangle, style = filled, color = grey] 
+  
+  # flowchart for hotspots
+ 
+  hotspots [label = 'Identificación de los Hotspots', style = filled, color = orange]
+  
+  # flowchart for hotspots
+ 
+  val [label = 'Validación de los Hotspots',  style = filled, color = orange]
+  # 
+  carg_enf [label = 'Carga de la Enfermedad', style = filled, color = '#4285F4']
+  
+  abund [label = 'Abundancia diferencial', style = filled, color = '#DB4437'] 
+  
+  risk [label = 'Riesgo Diferencial', style = filled, color = '#0F9D58'] 
+  
+  int [label = 'Intervenciones', style = filled, color = '#F4B400'] 
+  
+  # edge definitions with the node IDs
+  hotspots ->  val -> { carg_enf abund risk int}
+ 
+  }", 
+  height = 550)
 
+```
+]
+.pull-rigth[
+.blue[Estudios relacionados con la validación]
+
+- Carga de la Enfermedad (Wen 2006, Almeida et al 2007, Wen et al 2010, Liu et al 2013, Ling et al 2014, Ratanawong et al 2016, Acharya et al 2016, Fuentes-Vallejo et al 2017, Vicente et al 2017, Hernandez-Gaytán et al, 2017, Hafeez et al 2017, Sun et al 2017, Bisanzio et al 2018 
+)
+
+- Abundancia diferencial (Ka-Chon et al 2018)
+
+- Riesgo Diferencial (Bisanzio et al 2018)
+
+- Intervenciones (Com.Pers Felipe Dzul)
+
+- Infección Diferencial en el Vector (Com.Pers Felipe Dzul)
+]
 ---
 class: center, middle
 # **Discusión**
