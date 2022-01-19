@@ -455,7 +455,7 @@ class: center, middle
 
 ---
 class: center
-### **Casos de Dengue Positivos & Negativos**
+## **Casos de Dengue Positivos & Negativos**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 .pull-left[
@@ -463,7 +463,7 @@ class: center
 
 .pull-rigth[
 
-```{r, echo=TRUE}
+```{r, echo=FALSE}
 tibble::tibble(Año = c("2019", "2014", "2013", "2012", ""),
 Positivo = c(262, 180, 88, 250, 270),
 Negativo = c(189, 264, 189, 486, 1228),
