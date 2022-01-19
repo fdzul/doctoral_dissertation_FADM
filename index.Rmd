@@ -454,7 +454,7 @@ class: center, middle
 - [Determinar si la abundancia del vector y de huevos son diferentes en las casas alrededor de los casos positivos a dengue (casos) y las casas alrededor de los casos negativos (controles).]()
 
 ---
-class: center
+class: center, middle
 ## **Casos de Dengue Positivos & Negativos**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
@@ -484,7 +484,7 @@ class: center
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 ![](figs/OR_test_negative_design_2012_2019.jpg)]
 
-<img src = "figs/OR_test_negative_design_2012_2019.jpg">
+<img src = "figs/OR_test_negative_design_2012_2019.jpg"  width="500px" height="500px>
 
 ---
 # Thanks!
