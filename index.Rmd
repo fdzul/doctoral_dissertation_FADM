@@ -506,7 +506,7 @@ class: center
 ]
 .pull-rigth[
 .blue[Otros estudios]
-- Eficaciá de los aerodoles comerciales (Kuri-Morales et al. 2017)
+- Eficaciá de los aerosoles comerciales (Kuri-Morales et al. 2017)
 - Estudios de repelentes (Kuri-Morales et al. 2017)
 - Estudios de Susceptibilidad (Kuri-Morales et al. 2017)
 - Detección y establecimiento de ***Ae. Aegypti*** en CDMX ()
@@ -514,6 +514,9 @@ class: center
 - Hotspots del vector (Dzul et al. 2019)
 
 ]
+
+Monitorear 50 (40*5/) manzanas a la semana cuesta 1750 pesos 
+de recursos humanos, extrapolado a las 62.5 mil manzanas el costo sería de 2.187 millones de pesos. 
 
 .tiny[.blue[.footnote[(Chadee
 2009; Honorio et al. 2009a; Estallo et al. 2013; Estallo et al. 2015; Quereshi et al. 2017; 
