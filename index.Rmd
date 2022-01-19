@@ -496,6 +496,13 @@ class: center, middle
 - [Determinar los hotspots de DENV, CHIKV y ZIKV en localidades endémicas de México y la concordancia espacial de los hotspots de transmisión de DENV, CHIKV y ZIKV.]()
 
 ---
+class: center
+### **Identificación de los hotspots**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
+
+---
 class: center, middle
 # **Discusión**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
@@ -522,6 +529,7 @@ class: center
 - Hotspots del vector (Dzul et al. 2019)
 
 ]
+
 
 Monitorear 50 (40*5/) manzanas a la semana cuesta 1750 pesos 
 de recursos humanos, extrapolado a las 62.5 mil manzanas el costo sería de 2.187 millones de pesos. 
