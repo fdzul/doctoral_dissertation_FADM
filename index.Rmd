@@ -455,7 +455,7 @@ class: center, middle
 
 ---
 class: center
-### **Casos de Dengue**
+### **Casos de Dengue Positivos & Negativos**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 .pull-left[
@@ -474,11 +474,16 @@ Negativo3 = c(146, 217, 170, 408, 941),
 Positivo4 = c(109, 102, 59, 168, 504),
 Negativo4 = c(109, 102, 59, 168, 504)) |>
 kableExtra::kable() |>
-kableExtra::clasic()
+kableExtra::kable_classic()
 ```
-
-
 ]
+
+---
+class: center
+### **Casos de Dengue Positivos & Negativos**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+![](figs/OR_test_negative_design_2012_2019.jpg)]
+
 ---
 # Thanks!
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019"> 
