@@ -485,7 +485,7 @@ class: center
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 ![](figs/OR_test_negative_design_2012_2019.jpg)]
 
-<img src = "figs/OR_test_negative_design_2012_2019.jpg"  width="300px" height="300px>
+<img src = "figs/OR_test_negative_design_2012_2019.jpg"  width="100px" height="100px>
 
 ---
 class: center, middle
@@ -565,8 +565,7 @@ Regla 20:80. 20% de las unidades espaciales (el conteo de las unidades o la supe
 ]
 
 .pull-rigth[
-.blue[Resultado del Presente Estudio]
-
+.blue[Presente Estudio]
 9% y 19% de las unidades espaciales identificadas como hotspot correspondientes con el 10% al 23% del área (en kilómetros cuadrados) contribuyen con:
 
 - 22% al 47% DENV
@@ -574,6 +573,7 @@ Regla 20:80. 20% de las unidades espaciales (el conteo de las unidades o la supe
 - 9% al 52%  CHIKV 2016 
 - 18% al 52%  ZIKV 2016 
 - 18-50% todas las arbovirosis.
+
 ]
 
 .tiny[.blue[.footnote[Wen et al 2006, Wen et al 2010, Fuentes-Vallejo et al 2017, Vicente et al 2017, Hafeez et al 2017, Qu et al 2018, Bisanzio et al 2018, Lai et al 2018]]]
@@ -593,9 +593,12 @@ class: center
 .pull-left[
 .blue[Sistema de Monitoreo]
 ![](figs/eggs_hotspots_guadalajara.jpg)]
+
+
 ]
 .pull-rigth[
 .blue[Otros estudios]
+
 - Eficaciá de los aerosoles comerciales (Kuri-Morales et al. 2017)
 - Estudios de repelentes (Kuri-Morales et al. 2017)
 - Estudios de Susceptibilidad (Kuri-Morales et al. 2017)
