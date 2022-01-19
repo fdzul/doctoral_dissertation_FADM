@@ -400,7 +400,7 @@ class: center
 # **Hotspots de Dengue & Zika**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
-<img src = "https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/a29642f4-13ec-4d87-999c-653d32e4d268/gr4_lrg.jpg"  width="500px" height="600px">
+<img src = "https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/a29642f4-13ec-4d87-999c-653d32e4d268/gr4_lrg.jpg"  width="500px" height="500px">
 
 ---
 # **Concordancia Espacial de los Hotspots**
@@ -420,6 +420,30 @@ class: center, middle
 &nbsp;
 - [Determinar el efecto del tamaño de muestra del número de ovitrampas por manzana en la abundancia de huevos de ***Aedes aegypti***]()
 
+---
+class: center
+### **Ovirampas instaladas y manzanas muestradas**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+![](figs/manzanas&ovitrampas_instaladas.jpg)
+---
+class: center
+### **Ovirampas instaladas y manzanas muestradas**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+![](figs/times_series_plot.jpg)
+---
+class: center
+### **Comparación de Difentes Modelos**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+![](figs/dic_sample_size_models.jpg)
+---
+class: center
+### **Resultados**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+![](figs/IRR_sample_size.jpg)
 ---
 class: center, middle
 # **Resultados**
