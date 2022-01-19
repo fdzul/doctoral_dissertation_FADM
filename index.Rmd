@@ -518,14 +518,13 @@ class: center
 # **Conclusiones**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
-### - Es factible la identificación de los hotspots de transmisión en las localidades estudiadas
+### - [Es factible la identificación de los hotspots de transmisión en las localidades estudiadas]()
 
-### - Existe una concordancia espacial entre DENV, CHIKV y ZIKV.
+### - [Existe una concordancia espacial entre DENV, CHIKV y ZIKV.]()
 
-### - Muestrear una ovitrampa, dos ovitrampas o tres ovitrampas por manzana proporciona los mismos resultados que muestrear cuatro
-ovitrampas por manzana.
+### - [Muestrear una ovitrampa, dos ovitrampas o tres ovitrampas por manzana proporciona los mismos resultados que muestrear cuatro ovitrampas por manzana.]()
 
-### - (No hay diferencia entre la abundancia de huevos y adultos entre los casos y controles.)[]
+### - [No hay diferencia entre la abundancia de huevos y adultos entre los casos y controles.]()
 
 
 ---
@@ -535,15 +534,17 @@ class: center
 
 
 .pull-left[
-.blue[Un Artículo Científico]
+.blue[### Un Artículo Científico]
 ![](figs/the-lancet2.jpg)]
 
 .pull-rigth[
-.blue[Otros Productos]
-- un manual para la identificación de los hotspots
-- un paquete en R para la identificación de los hotspots
-- un dashboard para la identificación de los hotspots
-- identificación de los hotspots de todas las localidades prioritarias.
+.blue[### Otros Productos]
+### - [un manual para la identificación de los hotspots](https://fdzul.github.io/manual_hotspots/)
+### - [dos paquete en R para la identificación de los hotspots]()
+   - denhotspots(https://github.com/fdzul/denhotspots)
+   - deneggs(https://github.com/fdzul/deneggs)
+### - [un dashboard para la identificación de los hotspots](https://fdzul.github.io/dengue_risk_map_veracruz/)
+### - [identificación de los hotspots de todas las localidades]() prioritarias.
 ]
 
 ---
