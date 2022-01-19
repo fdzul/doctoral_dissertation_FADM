@@ -529,16 +529,21 @@ ovitrampas por manzana.
 
 
 ---
-class: center, middle
+class: center
 # **Productos Derivados de la Tesis**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 
 .pull-left[
-![](figs/The lancet.jpg)]
+.blue[Un Artículo Científico]
+![](figs/the-lancet2.jpg)]
 
 .pull-rigth[
-
+.blue[Otros Productos]
+- un manual para la identificación de los hotspots
+- un paquete en R para la identificación de los hotspots
+- un dashboard para la identificación de los hotspots
+- identificación de los hotspots de todas las localidades prioritarias.
 ]
 
 ---
