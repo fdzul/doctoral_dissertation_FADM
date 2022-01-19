@@ -560,17 +560,20 @@ Regla 20:80. 20% de las unidades espaciales (el conteo de las unidades o la supe
 
 .pull-left[
 .blue[Literatura]
-20% de las unidades espaciales y sus áreas identificadas como hotspots contribuyen entre el 20% y el 60% de los casos reportados en la ciudad y en este espacio viven entre el 20% y el 60% de la población (Wen et al 2006, Wen et al 2010, Fuentes-Vallejo et al 2017, Vicente et al 2017, Hafeez et al 2017, Qu et al 2018, Bisanzio et al 2018, Lai et al 2018) 
+
+- 20% de las unidades espaciales y sus áreas identificadas como hotspots contribuyen entre el 20% y el 60% de los casos reportados en la ciudad y en este espacio viven entre el 20% y el 60% de la población (Wen et al 2006, Wen et al 2010, Fuentes-Vallejo et al 2017, Vicente et al 2017, Hafeez et al 2017, Qu et al 2018, Bisanzio et al 2018, Lai et al 2018) 
 
 ]
 .pull-rigth[
 .blue[Resultado del Presente Estudio]
+
 9% y 19% de las unidades espaciales identificadas como hotspot correspondientes con el 10% al 23% del área (en kilómetros cuadrados) contribuyen con:
-22% al 47% DENV
-14% al 55% CHIKV 2015
-9% al 52%  CHIKV 2016 
-18% al 52%  ZIKV 2016 
-18-50% todas las arbovirosis.
+
+- 22% al 47% DENV
+- 14% al 55% CHIKV 2015
+- 9% al 52%  CHIKV 2016 
+- 18% al 52%  ZIKV 2016 
+- 18-50% todas las arbovirosis.
 ]
 
 ---
