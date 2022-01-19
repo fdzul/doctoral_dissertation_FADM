@@ -496,12 +496,38 @@ class: center, middle
 - [Determinar el efecto del tamaño de muestra del número de ovitrampas por manzana en la abundancia de huevos de ***Aedes aegypti***]()
 
 ---
+class: center
+### **Tamaño de muestra**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+.pull-left[
+.blue[Sistema de Monitoreo]
+
+]
+.pull-rigth[
+.blue[Otros estudios]
+- Eficaciá de los aerodoles comerciales (Kuri-Morales et al. 2017)
+- Estudios de repelentes (Kuri-Morales et al. 2017)
+- Estudios de Susceptibilidad (Kuri-Morales et al. 2017)
+- Detección y establecimiento de ***Ae. Aegypti*** en CDMX ()
+- Transmisión Vertical (Izquierdo-Susan et al. 2019)
+- Hotspots del vector (Dzul et al. 2019)
+
+]
+
+.tiny[.blue[.footnote[(Chadee
+2009; Honorio et al. 2009a; Estallo et al. 2013; Estallo et al. 2015; Quereshi et al. 2017; 
+Custodio et al. 2019), la casa por grid /área/distancia (Regis et al. 2008; Honorio et al. 
+2009, Codeco et al. 2015; Costa et al. 2015; Fisher et al. 2016) o la casa por manzana 
+(Favaro et al. 2008; Rezende et al. 2013; Steward-Ibarra et al. 2013; Serpa et al. 2013)]]]
+
+---
 class: center, middle
 # **Discusión**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 &nbsp;
-- [Determinar el efecto del tamaño de muestra del número de ovitrampas por manzana en la abundancia de huevos de ***Aedes aegypti***]()
+- [Determinar si la abundancia del vector y de huevos son diferentes en las casas alrededor de los casos positivos a dengue (casos) y las casas alrededor de los casos negativos (controles).]()
 
 ---
 class: center
@@ -526,13 +552,13 @@ Bowman et al   2014, Chang et al 2015", "Dibo et al 2008,Rubio-Palis et al 2011,
 # **Conclusiones**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
-### 1 [Es factible la identificación de los hotspots de transmisión en las localidades estudiadas]()
+###  1) [Es factible la identificación de los hotspots de transmisión en las localidades estudiadas]()
 
-### 2 [Existe una concordancia espacial entre DENV, CHIKV y ZIKV.]()
+###  2) [Existe una concordancia espacial entre DENV, CHIKV y ZIKV.]()
 
-### 3 [Muestrear una ovitrampa, dos ovitrampas o tres ovitrampas por manzana proporciona los mismos resultados que muestrear cuatro ovitrampas por manzana.]()
+###  3) [Muestrear una ovitrampa, dos ovitrampas o tres ovitrampas por manzana proporciona los mismos resultados que muestrear cuatro ovitrampas por manzana.]()
 
-### 4 [No hay diferencia entre la abundancia de huevos y adultos entre los casos y controles.]()
+###    4) [No hay diferencia entre la abundancia de huevos y adultos entre los casos y controles.]()
 
 
 ---
