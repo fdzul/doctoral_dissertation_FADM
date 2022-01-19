@@ -452,7 +452,7 @@ class: center, middle
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 &nbsp;
-- [Determinar si la abundancia del vector y de huevos son diferentes en las casas alrededor de los casos positivos a dengue (casos) y las casas alrededor de los casos negativos (controles).]()
+[Determinar si la abundancia del vector y de huevos son diferentes en las casas alrededor de los casos positivos a dengue (casos) y las casas alrededor de los casos negativos (controles).]()
 
 ---
 class: center, middle
@@ -493,7 +493,7 @@ class: center, middle
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 &nbsp;
-- [Determinar los hotspots de DENV, CHIKV y ZIKV en localidades endémicas de México y la concordancia espacial de los hotspots de transmisión de DENV, CHIKV y ZIKV.]()
+[Determinar los hotspots de DENV, CHIKV y ZIKV en localidades endémicas de México y la concordancia espacial de los hotspots de transmisión de DENV, CHIKV y ZIKV.]()
 
 ---
 class: center
@@ -569,11 +569,11 @@ Regla 20:80. 20% de las unidades espaciales (el conteo de las unidades o la supe
 .blue[Presente Estudio]
 9% y 19% de las unidades espaciales identificadas como hotspot correspondientes con el 10% al 23% del área (en kilómetros cuadrados) contribuyen con:
 
-- 22% al 47% DENV
-- 14% al 55% CHIKV 2015
-- 9% al 52%  CHIKV 2016 
-- 18% al 52%  ZIKV 2016 
-- 18-50% todas las arbovirosis.
+22% al 47% DENV
+14% al 55% CHIKV 2015
+9% al 52%  CHIKV 2016 
+18% al 52%  ZIKV 2016 
+18-50% todas las arbovirosis.
 
 ]
 
@@ -584,7 +584,7 @@ class: center, middle
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 &nbsp;
-- [Determinar el efecto del tamaño de muestra del número de ovitrampas por manzana en la abundancia de huevos de ***Aedes aegypti***]()
+[Determinar el efecto del tamaño de muestra del número de ovitrampas por manzana en la abundancia de huevos de ***Aedes aegypti***]()
 
 ---
 class: center
