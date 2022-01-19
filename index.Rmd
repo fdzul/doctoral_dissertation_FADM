@@ -484,7 +484,31 @@ class: center
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 ![](figs/OR_test_negative_design_2012_2019.jpg)]
 
-<img src = "figs/OR_test_negative_design_2012_2019.jpg"  width="500px" height="500px>
+<img src = "figs/OR_test_negative_design_2012_2019.jpg"  width="400px" height="400px>
+
+---
+class: center, middle
+# **Discusión**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+&nbsp;
+- [Determinar el efecto del tamaño de muestra del número de ovitrampas por manzana en la abundancia de huevos de ***Aedes aegypti***]()
+
+
+---
+class: center, middle
+# **Conclusión**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+&nbsp;
+- [Determinar el efecto del tamaño de muestra del número de ovitrampas por manzana en la abundancia de huevos de ***Aedes aegypti***]()
+
+---
+class: center, middle
+# **Productos Derivados de la Tesis**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
 
 ---
 # Thanks!
