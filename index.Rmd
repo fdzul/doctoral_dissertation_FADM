@@ -496,6 +496,14 @@ class: center, middle
 - [Determinar el efecto del tamaño de muestra del número de ovitrampas por manzana en la abundancia de huevos de ***Aedes aegypti***]()
 
 ---
+class: center, middle
+# **Discusión**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+&nbsp;
+- [Determinar el efecto del tamaño de muestra del número de ovitrampas por manzana en la abundancia de huevos de ***Aedes aegypti***]()
+
+---
 class: center
 ### **Relación entre casos y huevos**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
@@ -514,7 +522,7 @@ Bowman et al   2014, Chang et al 2015", "Dibo et al 2008,Rubio-Palis et al 2011,
 ```
 
 ---
-class: center
+
 # **Conclusiones**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
@@ -528,7 +536,6 @@ class: center
 
 
 ---
-class: center
 # **Productos Derivados de la Tesis**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
