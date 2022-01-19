@@ -141,11 +141,292 @@ class: center,
 &nbsp;
 - [Determinar si la abundancia del vector y de huevos son diferentes en las casas alrededor de los casos positivos a dengue (casos) y las casas alrededor de los casos negativos (controles).]()
 
+
 ---
-# **Sitio de Estudio**
+class: center,
+# **Objetivo 1. Sitio de Estudio**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
-<img src = "figs/high_risk_loc.jpg" width="1000">
+<img src = "https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/ca6efc8e-6b7a-44aa-b2ab-affa3009fb54/gr1_lrg.jpg" width="500">
+
+---
+# Hotspots de la Transmisión de Dengue
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+.pull-left[
+```{r, dpi=300,echo=FALSE, fig.align ="center", out.width = "100%"}
+DiagrammeR::grViz("digraph {
+
+  # graph definitions
+  graph [layout = dot, rankdir = TB]
+  
+  # node definitions
+  node [shape = rectangle, style = filled, color = grey] 
+  
+  # flowchart for hotspots
+  sinave [label = 'SINAVE',  fillcolor = 'SeaGreen', color = 'white', fontcolor = 'white']
+  denv [label = 'Bases de DENV',  fillcolor = 'SeaGreen', color = 'white', fontcolor = 'white']
+  geocode [label = 'Geocodificación',  fillcolor = 'SeaGreen', color = 'white', fontcolor = 'white']
+  cases_ageb [label = 'Casos por AGEBs']
+  z_score [label = 'Z-score']
+  gi [label = 'Estadístico Espacial Local (Gi*)']
+  bonferroni [label = 'Corrección de Bonferroni']
+  hotspots [label = 'Hotspots', style = filled, color = orange]
+  
+  # flow chart for inegi
+  inegi [label = 'INEGI', fillcolor = 'DeepSkyBlue', color = 'white', fontcolor = 'black']
+  loc [label = 'Localidades Shapefile', fillcolor = 'DeepSkyBlue', color = 'white', fontcolor = 'black']
+  ageb [label = 'AGEB Shapefile', fillcolor = 'DeepSkyBlue', color = 'white', fontcolor = 'black']
+  loc_esp [label = 'Localidad de Ínteres', fillcolor = 'DeepSkyBlue', color = 'white', fontcolor = 'black']
+  ageb_esp [label = 'AGEBs de la Localidad de Ínteres', fillcolor = 'DeepSkyBlue', color = 'white', fontcolor = 'black']
+  mat [label = 'Matriz de Adjacencias', fillcolor = 'DeepSkyBlue', color = 'white', fontcolor = 'black']
+  
+  # edge definitions with the node IDs
+  edge [color = black]
+  sinave -> denv -> geocode -> cases_ageb -> z_score -> gi -> bonferroni -> hotspots 
+  inegi -> {ageb, loc}
+  loc -> loc_esp -> ageb_esp
+  ageb -> ageb_esp
+  ageb_esp -> mat
+  mat -> cases_ageb 
+ 
+  }", 
+  height = 550)
+
+```
+]
+.pull-right[
+Estadístico Espacial Local $\color{#2ECC40}G_{\color{#2ECC40}i}^{\color{#2ECC40}*}$
+
+
+$$\color{#2ECC40}G_{\color{#2ECC40}i}^{\color{#2ECC40}*} = \frac{\color{#FF4136}\sum_{\color{#FF4136}j \color{#FF4136}= \color{#FF4136}1}^\color{#FF4136}{n} \color{#FF4136}w_{\color{#FF4136}i\color{#FF4136}j}\color{#FF4136}x_{\color{#FF4136}j}}
+{\color{#0074D9}\sum_{\color{#0074D9}j \color{#0074D9}= \color{#0074D9}1}^{\color{#0074D9}n} \color{#0074D9}x_{\color{#0074D9}j}}$$
+
+donde:
+ 
+$\color{#FF4136}\sum_{\color{#FF4136}j \color{#FF4136}= \color{#FF4136}1}^\color{#FF4136}{n} \color{#FF4136}w_{\color{#FF4136}i\color{#FF4136}j}\color{#FF4136}x_{\color{#FF4136}j}$ el numerador, es la suma de los valores $x_{j}$ de la localidad de interes de la unidad espacial de interes $x_{i}$ & 
+
+$\frac{}{\color{#0074D9}\sum_{\color{#0074D9}j \color{#0074D9}= \color{#0074D9}1}^{\color{#0074D9}n} \color{#0074D9}x_{\color{#0074D9}j}}$ el denominador, es la suma de todos los valores $x$ en toda la localidad de interes.
+
+
+]
+
+---
+class: center,
+# **Objetivo 2. Sitio de Estudio**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+.pull-left[
+.small[.justify-left[
+- **Muestro Sistemático**
+ - 1 manzana por cada 4 a 6 en zonas planas
+ - 1 manzana por cada 2 a 4 en zonas con pendientes
+ 
+- **Muestreo por autoselección**
+ - una casa por cada lado de la manzana
+- **Colecta semanal**
+
+- **Captura en línea**
+]
+]
+]
+
+.pull-right[
+.blue[Veracruz]
+```{r,fig.align ="center",fig.width=5, fig.height=8,echo=FALSE, warning=FALSE, message=FALSE}
+library(sf)
+library(magrittr)
+source('C:/Users/felip/OneDrive/cursos_impartidos/2021/foro_estadistica/3.Functions/block_surveillance.R')
+path_coord <- "C:/Users/felip/Dropbox/cenaprece_datasets/30_veracruz/DescargaOvitrampasMesFco.txt"
+
+blocks_surveillance(locality = "Veracruz",
+                    cve_geo = "30",
+                    path_coords = path_coord)
+
+```
+---
+
+# **Modelo de Regresión**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
+### $\color{#2ECC40}y{_\color{#2ECC40}i} = \color{#FF4136}\beta{_\color{#FF4136}0} + \color{#0074D9}\beta{_\color{#0074D9}1}\color{#0074D9}x + \color{#F4B400}\alpha{_\color{#F4B400}i} + \color{#6200B4}\epsilon{_\color{#6200B4}i}$
+
+donde: 
+
+$\color{#2ECC40}y{_\color{#2ECC40}i}$  es la variable de respuesta, es decir el número de huevos por ovitrampa
+
+$\color{#FF4136}\beta{_\color{#FF4136}0}$ es el intercepto
+
+$\color{#0074D9}\beta{_\color{#0074D9}1}\color{#0074D9}x$ es el coeficiente de la diferencia del número huevos entre los diferentes tamaños de muestra (se tomó como referencia la base de datos completa, cuatro ovitrampas por manzana).
+
+$\color{#F4B400}\alpha{_\color{#F4B400}i}$ el efecto del intercepto aleatorio, anida las observaciones por sector, manzana, localidad y municipio.
+
+$\color{#6200B4}\epsilon{_\color{#6200B4}i}$ representan el error, el cual incorporará la variabilidad natural del sistema biológico y el error observacional o de medición
+
+Los modelos asumen que los interceptos aleatorios y el error son distribuidos independientemente e idénticos con media cero y una varianza.
+
+Los modelos fueron implementados para cada combinación de año y semana.
+
+---
+class: center,
+# **Objetivo 3. Relación Casos & Huevos del vector**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+```{r, dpi=300,echo=FALSE, fig.align ="center", out.width = "100%"}
+DiagrammeR::grViz("digraph {
+
+  # graph definitions
+  graph [layout = dot, rankdir = TB]
+  
+  # node definitions
+  node [shape = rectangle, style = filled, color = grey] 
+  
+  # flowchart for hotspots
+  sinave [label = 'SINAVE',  fillcolor = 'SeaGreen', color = 'white', fontcolor = 'white']
+  denv [label = 'Bases de DENV',  fillcolor = 'SeaGreen', color = 'white', fontcolor = 'white']
+  age_den [label = '<= 12 & >= 65',  fillcolor = 'SeaGreen', color = 'white', fontcolor = 'white']
+  year_den [label = '2012, 2013, 2014, 2019',  fillcolor = 'SeaGreen', color = 'white', fontcolor = 'white']
+  
+  geocode [label = 'Geocodificación',  fillcolor = 'SeaGreen', color = 'white', fontcolor = 'white']
+  cases_ovitrap [label = 'Ovitrampas por Casos']
+  
+  
+  # flow chart for inegi
+  cenaprece [label = 'CENAPRECE', fillcolor = 'DeepSkyBlue', color = 'white', fontcolor = 'black']
+  
+  coord [label = 'Coordenadas', fillcolor = 'DeepSkyBlue', color = 'white', fontcolor = 'black']
+  ovitraps [label = 'Ovitrampas', fillcolor = 'DeepSkyBlue', color = 'white', fontcolor = 'black']
+  #
+   semana_ano [label = 'Semana, Año']
+  
+  # edge definitions with the node IDs
+  edge [color = black]
+  sinave -> denv -> {age_den year_den} -> geocode -> cases_ovitrap
+  
+  cenaprece -> {coord, ovitraps} -> cases_ovitrap -> semana_ano
+  
+ 
+  }", 
+  height = 550)
+
+```
+
+
+---
+# **Modelo de Regresión**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+
+### $\color{#2ECC40}y{_\color{#2ECC40}i} = \color{#FF4136}\beta{_\color{#FF4136}0} + \color{#0074D9}\beta{_\color{#0074D9}1}\color{#0074D9}x + \color{#F4B400}\alpha{_\color{#F4B400}i} + \color{#6200B4}\epsilon{_\color{#6200B4}i}$
+
+donde: 
+
+$\color{#2ECC40}y{_\color{#2ECC40}i}$  es la variable de respuesta, caso = 1 y control = 0
+
+$\color{#FF4136}\beta{_\color{#FF4136}0}$ es el intercepto de la formula y representa el valor de la 
+ecuación cuando el número de huevos es cero.
+
+$\color{#0074D9}\beta{_\color{#0074D9}1}\color{#0074D9}x$ es la pendiente de la ecuación y representa la diferencia entre las abundancia de huevos entre los casos y controles y la tasa de cambio en 𝑦 basado en una unidad de cambio en 𝑥
+
+$\color{#F4B400}\alpha{_\color{#F4B400}i}$ el efecto del intercepto aleatorio, anida las observaciones por sector, manzana, localidad y municipio.
+
+$\color{#6200B4}\epsilon{_\color{#6200B4}i}$ representan el error, el cual incorporará la variabilidad natural del sistema biológico y el error observacional o de medición
+
+Los modelos asumen que los interceptos aleatorios y el error son distribuidos independientemente e idénticos con media cero y una varianza
+
+Los modelos fueron implementados para cada combinación de año, lags (lags0 a lags4) y buffers (100-500 
+metros)
+---
+class: center, middle
+# **Resultados**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+&nbsp;
+- [Determinar los hotspots de DENV, CHIKV y ZIKV en localidades endémicas de México y la concordancia espacial de los hotspots de transmisión de DENV, CHIKV y ZIKV.]()
+
+
+---
+# **Análisis de Sensibilidad y Específicidad**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+```{r, echo=FALSE}
+tibble::tibble(Localidad  = c("Acapulco",
+                                   "Mérida",
+                                   "Veracruz",
+                                   "Cancún",
+                                   "Tapachula",
+                                   "Villahermosa",
+                                   "Campeche",
+                                   "Iguala",
+                                   "Coatzacoalcos",
+                                   "Promedio"),
+                    sensibilidad1 = c(.67, .76, .71, .89, .79,
+                                      .95, .71, .63, .8, .77),
+               especificidad1 = c(.96, .91, .93, .93, .95, .95, .94, .98, .96, .95),
+               sensibilidad2 = c(.61, .73, .38, .71, .33, .75, .5, .67, .33, .56),
+               especificidad2 = c(.87, .82, .89, .82, .88, .86, .85, .93, .89, .87),
+               sensibiliad3 = c(.68, .62, .38, .67, .33, .85, .31, .42, .36, .51),
+               especificidad3 = c(.88, .82, .90, .83, .89, .88, 83, 92, .91, .87)) |>
+    kableExtra::kable() |>
+    kableExtra::kable_classic() |>
+    kableExtra::add_header_above(c(" " = 1, "<=12 & >= 70 años de edad" = 2, "Distancia Euclideana" = 2, "Combinación edad & Distancia Euclideana" = 2))
+
+```
+---
+class: center
+# **Hotspots de la Transmisión de Dengue**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+<img src = "https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/3ee89887-cf71-4433-b6a1-4a76c5035589/gr2_lrg.jpg" width="500px" height="500px">
+
+---
+# **Hotspots de la Transmisión de Dengue**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+```{r, echo=FALSE}
+readxl::read_xlsx("tables/mmc2-tableS4-5.xlsx", sheet = 1, skip = 1) |> kableExtra::kable() 
+
+```
+
+---
+class: center
+# **Hotspots de Dengue & Chikungunya**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+<img src = "https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/9e0fbb95-e527-4e0c-9d9d-8d7487766a60/gr3_lrg.jpg" width="500px" height="500px">
+
+---
+class: center
+# **Hotspots de Dengue & Zika**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+<img src = "https://els-jbs-prod-cdn.jbs.elsevierhealth.com/cms/attachment/a29642f4-13ec-4d87-999c-653d32e4d268/gr4_lrg.jpg"  width="500px" height="600px">
+
+---
+# **Concordancia Espacial de los Hotspots**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+```{r, echo=FALSE}
+readxl::read_xlsx("tables/mmc2-tableS4-5.xlsx", sheet = 2) |> kableExtra::kable() 
+
+```
+
+
+---
+class: center, middle
+# **Resultados**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+&nbsp;
+- [Determinar el efecto del tamaño de muestra del número de ovitrampas por manzana en la abundancia de huevos de ***Aedes aegypti***]()
+
+---
+class: center, middle
+# **Resultados**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+&nbsp;
+- [Determinar si la abundancia del vector y de huevos son diferentes en las casas alrededor de los casos positivos a dengue (casos) y las casas alrededor de los casos negativos (controles).]()
 
 
 ---
