@@ -243,6 +243,7 @@ blocks_surveillance(locality = "Veracruz",
                     path_coords = path_coord)
 
 ```
+]
 ---
 
 # **Modelo de Regresión**
@@ -452,7 +453,32 @@ class: center, middle
 &nbsp;
 - [Determinar si la abundancia del vector y de huevos son diferentes en las casas alrededor de los casos positivos a dengue (casos) y las casas alrededor de los casos negativos (controles).]()
 
+---
+class: center
+### **Casos de Dengue**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
+.pull-left[
+![](figs/time_series_dengue_edo_ver.jpg)]
+
+.pull-rigth[
+
+```{r, echo=TRUE}
+tibble::tibble(Año = c("2019", "2014", "2013", "2012", ""),
+Positivo = c(262, 180, 88, 250, 270),
+Negativo = c(189, 264, 189, 486, 1228),
+Positivo2 = c(262, 180, 88, 250, 780),
+Negativo2 = c(189, 264, 189, 486, 1228),
+Positivo3 = c(255, 150, 77, 208, 690),
+Negativo3 = c(146, 217, 170, 408, 941),
+Positivo4 = c(109, 102, 59, 168, 504),
+Negativo4 = c(109, 102, 59, 168, 504)) |>
+kableExtra::kable() |>
+kableExtra::clasic()
+```
+
+
+]
 ---
 # Thanks!
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019"> 
