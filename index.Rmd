@@ -563,6 +563,7 @@ Regla 20:80. 20% de las unidades espaciales (el conteo de las unidades o la supe
 
 - 20% de las unidades espaciales y sus áreas identificadas como hotspots contribuyen entre el 20% y el 60% de los casos reportados en la ciudad y en este espacio viven entre el 20% y el 60% de la población.
 ]
+
 .pull-rigth[
 .blue[Resultado del Presente Estudio]
 
