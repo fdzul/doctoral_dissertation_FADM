@@ -270,7 +270,7 @@ Los modelos fueron implementados para cada combinación de año y semana.
 
 ---
 class: center,
-# **Objetivo 3. Relación Casos & Huevos del vector**
+### **Objetivo 3. Relación Casos & Huevos del vector**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 ```{r, dpi=300,echo=FALSE, fig.align ="center", out.width = "100%"}
@@ -483,6 +483,8 @@ class: center
 ### **Casos de Dengue Positivos & Negativos**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 ![](figs/OR_test_negative_design_2012_2019.jpg)]
+
+<img src = "figs/OR_test_negative_design_2012_2019.jpg">
 
 ---
 # Thanks!
