@@ -502,7 +502,7 @@ class: center
 
 .pull-left[
 .blue[Sistema de Monitoreo]
-
+![](figs/eggs_hotspots_guadalajara.jpg)]
 ]
 .pull-rigth[
 .blue[Otros estudios]
