@@ -408,7 +408,8 @@ class: center
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 ```{r, echo=FALSE}
-readxl::read_xlsx("tables/mmc2-tableS4-5.xlsx", sheet = 2) |> kableExtra::kable() 
+readxl::read_xlsx("tables/mmc2-tableS4-5.xlsx", sheet = 2) |> kableExtra::kable() |>
+    kableExtra::kable_classic()
 
 ```
 
@@ -480,7 +481,7 @@ kableExtra::kable_classic()
 
 ---
 class: center
-### **Casos de Dengue Positivos & Negativos**
+### **Relación entre casos y huevos**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 ![](figs/OR_test_negative_design_2012_2019.jpg)]
 
@@ -494,14 +495,38 @@ class: center, middle
 &nbsp;
 - [Determinar el efecto del tamaño de muestra del número de ovitrampas por manzana en la abundancia de huevos de ***Aedes aegypti***]()
 
-
 ---
-class: center, middle
-# **Conclusión**
+class: center
+### **Relación entre casos y huevos**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
-&nbsp;
-- [Determinar el efecto del tamaño de muestra del número de ovitrampas por manzana en la abundancia de huevos de ***Aedes aegypti***]()
+```{r, echo=FALSE}
+tibble::tibble(Etapa = c("Huevo", "Larva", "Adulto"),
+               Resultado =  c("No hay diferencia entre la abundancia de huevos y los casos/controles", "?", "No hay diferencia entre la abundancia de adultos y los casos/controles"),
+               "Literarura a favor" = c("Bowman et al   2014,Chang et al 2015, Kwan et al 2017",
+                                        "Chadee et al 2005, Sanchez et al 2006, Lin and Wen et al 2012, Pham et al 20011, Chavaroti-Nieto et al 2015, Vargas et al 2015","Mammen et al 2008, Honorio et al 2009,
+Barbosa et al 2014, Bowman et al   2014, Chang et al 2015, Pepin et al 2015"),
+               "Literarura en contra" = c("Ho et al 2005, Mello et al 2012, Alburquerque et al 2018, Betanzos-Reyes et al 2018", "Sulaiman et al 1996
+Bowman et al   2014, Chang et al 2015", "Dibo et al 2008,Rubio-Palis et al 2011, Mello et al 2012, Yoon et al 2012, degener et a  2014, Pessanha et al 2014, Cromwell et al 2017, Cruz-Ferreira et al 2017, Perreira-Parra et al 2018")) |>
+    kableExtra::kable() |>
+    kableExtra::kable_classic()
+
+```
+
+---
+class: center
+# **Conclusiones**
+<hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
+
+- Es factible la identificación de los hotspots de transmisión en las localidades estudiadas
+
+- Existe una concordancia espacial entre DENV, CHIKV y ZIKV.
+
+- Muestrear una ovitrampa, dos ovitrampas o tres ovitrampas por manzana proporciona los mismos resultados que muestrear cuatro
+ovitrampas por manzana.
+
+- No hay diferencia entre la abundancia de huevos y adultos entre los casos y controles.
+
 
 ---
 class: center, middle
