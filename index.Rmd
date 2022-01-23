@@ -386,18 +386,21 @@ class: center
 
 ```{r, echo=FALSE, warning=FALSE, message=FALSE}
 x <- readxl::read_xlsx("tables/mmc2-tableS4-5.xlsx", sheet = 1, skip = 1) 
-names(x) <- c("Ciudad", "Estrato", "Pob", "Area", "AGEBs", "DEN", "CHIK 2015", "CHIK 2016", "ZIK 2016", "Todos")
+names(x) <- c("Ciudad", "Estrato", "Pob", "Area", "AGEBs", "DEN", "CHIK 2015", "CHIK 2016", "ZIK 2016", "Arbovirosis")
 x |> 
-    #dplyr::select(-Estrato) |>
+    dplyr::select(-Estrato) |>
     dplyr::mutate(Pob = round(as.numeric(Pob), digits = 2),
                   Area = round(as.numeric(Area), digits = 2),
                   AGEBs = round(as.numeric(AGEBs), digits = 2),
                   DEN = round(as.numeric(DEN), digits = 2),
                   "CHIK 2015" = round(as.numeric(`CHIK 2015`), digits = 2),
                   "CHIK 2016" = round(as.numeric(`CHIK 2016`), digits = 2),
-                  "ZIK 2016" = round(as.numeric(`ZIK 2016`), digits = 2)) |>
+                  "ZIK 2016" = round(as.numeric(`ZIK 2016`), digits = 2),
+                  "Arbovirosis" = round(as.numeric(`Arbovirosis`), digits = 2)) |>
+    dplyr::filter(!is.na(Pob)) |>
     kableExtra::kable() |>
-    kableExtra::kable_classic()
+    kableExtra::kable_classic() |>
+    kableExtra::add_header_above(c(" " = 1, "Porcentaje del total de Cada Ciudad" = 8))
 
 ```
 
@@ -421,8 +424,10 @@ class: center
 
 ```{r, echo=FALSE}
 readxl::read_xlsx("tables/mmc2-tableS4-5.xlsx", sheet = 2) |>
+    dplyr::select(-2) |>
 kableExtra::kable() |>
-    kableExtra::kable_classic()
+    kableExtra::kable_classic() |>
+    kableExtra::footnote(general = "Valores del estadístico Kendall-W para cada combinación de arbovirosis. Las relaciones no signitificativas son indicadas por el asterisco (P>0.5)")
 
 ```
 
@@ -648,10 +653,10 @@ class: center
 ```{r, echo=FALSE}
 tibble::tibble(Etapa = c("Huevo", "Larva", "Adulto"),
                Resultado =  c("No hay diferencia entre la abundancia de huevos y los casos/controles", "?", "No hay diferencia entre la abundancia de adultos y los casos/controles"),
-               "Literarura a favor" = c("Bowman et al   2014,Chang et al 2015, Kwan et al 2017",
+               "Literatura a favor" = c("Bowman et al   2014,Chang et al 2015, Kwan et al 2017",
                                         "Chadee et al 2005, Sanchez et al 2006, Lin and Wen et al 2012, Pham et al 20011, Chavaroti-Nieto et al 2015, Vargas et al 2015","Mammen et al 2008, Honorio et al 2009,
 Barbosa et al 2014, Bowman et al   2014, Chang et al 2015, Pepin et al 2015"),
-               "Literarura en contra" = c("Ho et al 2005, Mello et al 2012, Alburquerque et al 2018, Betanzos-Reyes et al 2018", "Sulaiman et al 1996
+               "Literatura en contra" = c("Ho et al 2005, Mello et al 2012, Alburquerque et al 2018, Betanzos-Reyes et al 2018", "Sulaiman et al 1996
 Bowman et al   2014, Chang et al 2015", "Dibo et al 2008,Rubio-Palis et al 2011, Mello et al 2012, Yoon et al 2012, degener et a  2014, Pessanha et al 2014, Cromwell et al 2017, Cruz-Ferreira et al 2017, Perreira-Parra et al 2018")) |>
     kableExtra::kable() |>
     kableExtra::kable_classic()
@@ -669,7 +674,7 @@ Bowman et al   2014, Chang et al 2015", "Dibo et al 2008,Rubio-Palis et al 2011,
 
 ###  3) [Muestrear una ovitrampa, dos ovitrampas o tres ovitrampas por manzana proporciona los mismos resultados que muestrear cuatro ovitrampas por manzana.]()
 
-###    4) [No hay diferencia entre la abundancia de huevos y adultos entre los casos y controles.]()
+###    4) [No hay diferencia entre la abundancia de huevos entre los casos y controles.]()
 
 
 ---
