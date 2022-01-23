@@ -78,7 +78,7 @@ class: center
 
 .pull-left[
 
-.large[.justify-left[.blue[Los ***hotspots*** de las arbovirosis transmitidas por ***Aedes aegypti*** son definidas como aquellas áreas donde se concentra la mayor carga de la transmisión de los virus del dengue, chikungunya y/ó zika]]]
+.large[.justify-left[.blue[Los ***hotspots*** de las arbovirosis transmitidas por ***Aedes aegypti*** son definidas como aquellas áreas donde se concentra la mayor carga de la transmisión de los virus del Dengue, Chikungunya y/ó Zika]]]
 
 ]
 .pull-right[
@@ -116,7 +116,7 @@ class: center,
 # **Hipótesis**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019"> 
 
-[Las arbovirosis transmitidas por ***Aedes aegypti*** presentan concordancia espacial en las áreas de mayor intensidad de transmisión (hotspots), existe mayor abundancia del vector en las casas alrededor de los casos positivos que en las casas de los casos negativos y el tamaño de muestra de ovitrampas por manzana no tiene impacto en la abundancia del vector del dengue por manzana]()
+[Las arbovirosis transmitidas por ***Aedes aegypti*** presentan concordancia espacial en las áreas de mayor intensidad de transmisión (hotspots), además existe mayor abundancia del vector en las casas alrededor de los casos positivos que en las casas de los casos negativos]()
 
 &nbsp;
 
