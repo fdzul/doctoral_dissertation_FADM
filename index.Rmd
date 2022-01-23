@@ -483,7 +483,7 @@ class: center, middle
 .pull-rigth[
 
 ```{r, echo=FALSE}
-tibble::tibble(Año = c("2019", "2014", "2013", "2012", ""),
+tibble::tibble(" " = c("2019", "2014", "2013", "2012", ""),
 Positivo = c(262, 180, 88, 250, 270),
 Negativo = c(189, 264, 189, 486, 1228),
 Positivo2 = c(262, 180, 88, 250, 780),
@@ -493,7 +493,9 @@ Negativo3 = c(146, 217, 170, 408, 941),
 Positivo4 = c(109, 102, 59, 168, 504),
 Negativo4 = c(109, 102, 59, 168, 504)) |>
 kableExtra::kable() |>
-kableExtra::kable_classic()
+kableExtra::kable_classic() |>
+    kableExtra::add_header_above(c("Año" = 1, "Localidad" = 2, "Total" = 2, "Area de Estudio" = 2, "Muestreados" = 2), bold = T, align = "center") |> kableExtra::add_header_above(c(" " = 3, "Geocodificados" = 4, " " = 2), bold = T, align = "center")
+    
 ```
 ]
 
@@ -674,7 +676,7 @@ Bowman et al   2014, Chang et al 2015", "Dibo et al 2008,Rubio-Palis et al 2011,
 
 ###  3) [Muestrear una ovitrampa, dos ovitrampas o tres ovitrampas por manzana proporciona los mismos resultados que muestrear cuatro ovitrampas por manzana.]()
 
-###    4) [No hay diferencia entre la abundancia de huevos entre los casos y controles.]()
+###  4) [No hay diferencia entre la abundancia de huevos entre los casos y controles.]()
 
 
 ---
