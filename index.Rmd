@@ -124,7 +124,7 @@ class: center,
 # **Objetivo General**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019"> 
 
-[Realizar el análisis espacio-temporal para identificar los puntos calientes (hotspots) de la transmisión de los virus del DENV, CHIKV y ZIKV en México.]()
+[Análisis espacio-temporal para identificar los hotspots de la transmisión de los virus del DENV, CHIKV y ZIKV en México.]()
 
 
 
