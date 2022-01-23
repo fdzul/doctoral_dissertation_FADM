@@ -448,7 +448,7 @@ class: center
 ![](figs/manzanas&ovitrampas_instaladas.jpg)
 ---
 class: center
-### **Ovirampas instaladas y manzanas muestradas**
+### **Abundancia de huevos por tamaño de muestra**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 ![](figs/times_series_plot.jpg)
