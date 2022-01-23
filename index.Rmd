@@ -384,8 +384,20 @@ class: center
 # **Hotspots de la Transmisión de Dengue**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
-```{r, echo=FALSE}
-readxl::read_xlsx("tables/mmc2-tableS4-5.xlsx", sheet = 1, skip = 1) |> kableExtra::kable() 
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+x <- readxl::read_xlsx("tables/mmc2-tableS4-5.xlsx", sheet = 1, skip = 1) 
+names(x) <- c("Ciudad", "Estrato", "Pob", "Area", "AGEBs", "DEN", "CHIK 2015", "CHIK 2016", "ZIK 2016", "Todos")
+x |> 
+    #dplyr::select(-Estrato) |>
+    dplyr::mutate(Pob = round(as.numeric(Pob), digits = 2),
+                  Area = round(as.numeric(Area), digits = 2),
+                  AGEBs = round(as.numeric(AGEBs), digits = 2),
+                  DEN = round(as.numeric(DEN), digits = 2),
+                  "CHIK 2015" = round(as.numeric(`CHIK 2015`), digits = 2),
+                  "CHIK 2016" = round(as.numeric(`CHIK 2016`), digits = 2),
+                  "ZIK 2016" = round(as.numeric(`ZIK 2016`), digits = 2)) |>
+    kableExtra::kable() |>
+    kableExtra::kable_classic()
 
 ```
 
@@ -408,7 +420,8 @@ class: center
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 ```{r, echo=FALSE}
-readxl::read_xlsx("tables/mmc2-tableS4-5.xlsx", sheet = 2) |> kableExtra::kable() |>
+readxl::read_xlsx("tables/mmc2-tableS4-5.xlsx", sheet = 2) |>
+kableExtra::kable() |>
     kableExtra::kable_classic()
 
 ```
