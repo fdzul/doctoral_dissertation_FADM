@@ -503,7 +503,6 @@ kableExtra::kable_classic() |>
 class: center
 ### **Relación entre casos y huevos**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
-![](figs/OR_test_negative_design_2012_2019.jpg)]
 
 <img src = "figs/OR_test_negative_design_2012_2019.jpg"  width="100px" height="100px>
 
