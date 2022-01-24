@@ -518,9 +518,6 @@ class: center, middle
 class: center
 ### **Identificación de los hotspots**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
-
-.pull-left[
-.blue[]
 ```{r, dpi=300,echo=FALSE, fig.align ="center", out.width = "100%"}
 DiagrammeR::grViz("digraph {
 
@@ -550,11 +547,11 @@ DiagrammeR::grViz("digraph {
   hotspots ->  val -> { carg_enf abund risk int}
  
   }", 
-  height = 800)
+  height = 300)
 
 ```
-]
-.pull-rigth[
+
+.pull-left[
 .blue[Estudios Relacionados con la Validación]
 
 **<span style="color:#4285F4;">Carga de la Enfermedad </span>** (Wen 2006, Almeida et al 2007, Wen et al 2010, Liu et al 2013, Ling et al 2014, Ratanawong et al 2016, Acharya et al 2016, Fuentes-Vallejo et al 2017, Vicente et al 2017, Hernandez-Gaytán et al, 2017, Hafeez et al 2017, Sun et al 2017, Bisanzio et al 2018)
@@ -571,7 +568,7 @@ DiagrammeR::grViz("digraph {
 
 ---
 class: center
-### **Identificación de los hotspots**
+### **Identificación de los Hotspots & Carga de la Enfermedad**
 <hr style="height:2px;border-width:0;color:#330019;background-color:#330019">
 
 Regla 20:80. 20% de las unidades espaciales (el conteo de las unidades o la superficie área en kilómetros cuadrados) de una ciudad identificada como hotspots contribuyen con el 80% de los casos reportados en la unidad de tiempo analizada 
