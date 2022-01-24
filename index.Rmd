@@ -551,9 +551,6 @@ DiagrammeR::grViz("digraph {
 
 ```
 
-.pull-left[
-.blue[Estudios Relacionados con la Validación]
-
 **<span style="color:#4285F4;">Carga de la Enfermedad </span>** (Wen 2006, Almeida et al 2007, Wen et al 2010, Liu et al 2013, Ling et al 2014, Ratanawong et al 2016, Acharya et al 2016, Fuentes-Vallejo et al 2017, Vicente et al 2017, Hernandez-Gaytán et al, 2017, Hafeez et al 2017, Sun et al 2017, Bisanzio et al 2018)
 
 **<span style="color:#DB4437;">Abundancia diferencial (Ka-Chon et al 2018)</span>**
@@ -564,7 +561,6 @@ DiagrammeR::grViz("digraph {
 
 **<span style="color:##4285F4;">Infección Diferencial en el Vector (Com.Pers Felipe Dzul)</span>**
 
-]
 
 ---
 class: center
